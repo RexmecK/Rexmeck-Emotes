@@ -1,0 +1,13 @@
+{
+	//,
+	"template" : {"image":"/rexemotes/template/icon.png"}, 
+	"template2" : {"image":"/rexemotes/template2/icon.png"}, 
+	"dab" : {"image":"/rexemotes/dab/icon.png"}, 
+	"wave" : {"image":"/rexemotes/wave/icon.png"},
+	"default" : {"image":"/rexemotes/default/icon.png"},
+	"katzotsky" : {"image":"/rexemotes/katzotsky/icon.png"},
+	"facepalm" : {"image":"/rexemotes/facepalm/icon.png"},
+	"brofist" : {"image":"/rexemotes/brofist/icon.png"},
+	"tpose" : {"image":"/rexemotes/tpose/icon.png"},
+	"sit" : {"image":"/rexemotes/sit/icon.png"}
+}

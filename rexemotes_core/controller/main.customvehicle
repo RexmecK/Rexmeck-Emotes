@@ -1,0 +1,45 @@
+{
+	"name" : "compositerailplatform",
+	"clientEntityMode" : "ClientMasterAllowed",
+
+
+    "persistent" : false,
+    
+	"boundBox" : [-2.5, -2.5, 1.22, 1.22],
+	"slaveControlTimeout" : 2.0,
+	"slaveControlHeartbeat" : 1.0,
+    "canBeHit" : false,
+    
+	"movementSettings" : {
+		"collisionPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+		"mass" : 1.0,
+		"ignorePlatformCollision" : false,
+		"physicsEffectCategories" : []
+    },
+	
+	"animationCustom" : {
+		"animatedParts" : {
+			"stateTypes" : {},
+			"parts" : {
+				"platform" : {
+					"properties" : {
+						"offset" : [0,0]
+					}
+				}
+			}
+		}
+	},
+
+	"physicsCollisions" : {
+		"platform" : {
+			"collision" : [ [0,0], [0,0] ],
+			"collisionKind" : "platform",
+			"attachToPart" : "platform"
+		}
+	},
+    
+    "script" : "/rexemotes_core/controller/main.lua",
+    "facing" : 1,
+    "popItem" : null,
+	"animationPartTags" : {}
+}

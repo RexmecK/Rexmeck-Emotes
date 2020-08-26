@@ -1,0 +1,236 @@
+{
+	"gui" : {
+
+		"close" : {
+			"type" : "button",
+
+			"base" : "/rexemotesbinder/image/x.png",
+			"hover" : "/rexemotesbinder/image/x.png",
+			"pressed" : "/rexemotesbinder/image/x.png",
+			"pressedOffset" : [0, 0],
+
+			"callback" : "close",
+			"position" : [493, 233],
+			"zlevel" : 99
+		},
+
+		"background" : {
+			"zlevel" : -1,
+			"type" : "background",
+
+			"fileHeader" : "/rexemotesbinder/image/header.png",
+			"fileBody" : "/rexemotesbinder/image/body.png"
+		},
+
+		"h1" : {
+			"zlevel" : 100,
+			"type" : "label",
+			"position" : [3, 234],
+			"value" : "^#3b3b3b;Rexmeck Emotes"
+		},
+
+
+		"up" : {
+			"type" : "button",
+
+			"base" : "/rexemotesbinder/image/elementbg2.png",
+			"hover" : "/rexemotesbinder/image/elementbg2.png",
+			"pressed" : "/rexemotesbinder/image/elementbg2.png",
+			"pressedOffset" : [0, 0],
+
+			"callback" : "callback",
+			"position" : [363, 148],
+			"zlevel" : 99,
+			
+			"children" : {
+				"text" : {
+					"type" : "label",
+					"position" : [2, 4],
+					"vAnchor" : "mid",
+					"hAnchor" : "left",
+					"value" : "test"
+				}
+			}
+		},
+		"uppreview" : {
+			"zlevel" : 111,
+			"type" : "image",
+			"file" : "/rexemotesbinder/image/smallicon.png",
+			"minSize" : [60,60],
+			"maxSize" : [60,60],
+			"centered" : true,
+			"position" : [398, 183]
+		},
+
+		"left" : {
+			"type" : "button",
+
+			"base" : "/rexemotesbinder/image/elementbg2.png",
+			"hover" : "/rexemotesbinder/image/elementbg2.png",
+			"pressed" : "/rexemotesbinder/image/elementbg2.png",
+			"pressedOffset" : [0, 0],
+
+			"callback" : "callback",
+			"position" : [434, 77],
+			"zlevel" : 99,
+			
+			"children" : {
+				"text" : {
+					"type" : "label",
+					"position" : [2, 4],
+					"vAnchor" : "mid",
+					"hAnchor" : "left",
+					"value" : "test"
+				}
+			}
+		},
+		"leftpreview" : {
+			"zlevel" : 111,
+			"type" : "image",
+			"file" : "/rexemotesbinder/image/smallicon.png",
+			"minSize" : [60,60],
+			"maxSize" : [60,60],
+			"centered" : true,
+			"position" : [469, 112]
+		},
+
+		"down" : {
+			"type" : "button",
+
+			"base" : "/rexemotesbinder/image/elementbg2.png",
+			"hover" : "/rexemotesbinder/image/elementbg2.png",
+			"pressed" : "/rexemotesbinder/image/elementbg2.png",
+			"pressedOffset" : [0, 0],
+
+			"callback" : "callback",
+			"position" : [363, 6],
+			"zlevel" : 99,
+			
+			"children" : {
+				"text" : {
+					"type" : "label",
+					"position" : [2, 4],
+					"vAnchor" : "mid",
+					"hAnchor" : "left",
+					"value" : "test"
+				}
+			}
+		},
+		"downpreview" : {
+			"zlevel" : 111,
+			"type" : "image",
+			"file" : "/rexemotesbinder/image/smallicon.png",
+			"minSize" : [60,60],
+			"maxSize" : [60,60],
+			"centered" : true,
+			"position" : [398, 41]
+		},
+
+		
+		"right" : {
+			"type" : "button",
+
+			"base" : "/rexemotesbinder/image/elementbg2.png",
+			"hover" : "/rexemotesbinder/image/elementbg2.png",
+			"pressed" : "/rexemotesbinder/image/elementbg2.png",
+			"pressedOffset" : [0, 0],
+
+			"callback" : "callback",
+			"position" : [292, 77],
+			"zlevel" : 99,
+			
+			"children" : {
+				"text" : {
+					"type" : "label",
+					"position" : [2, 4],
+					"vAnchor" : "mid",
+					"hAnchor" : "left",
+					"value" : "test"
+				}
+			}
+		},
+		"rightpreview" : {
+			"zlevel" : 111,
+			"type" : "image",
+			"file" : "/rexemotesbinder/image/smallicon.png",
+			"minSize" : [60,60],
+			"maxSize" : [60,60],
+			"centered" : true,
+			"position" : [327, 112]
+		},
+
+
+		"scroll" : {
+			"zlevel" : 2,
+			"type" : "scrollArea",
+			"rect" : [4, 4, 286, 215],
+			"horizontalScroll" : false,
+			"verticalScroll" : false,
+			"children" : {
+				"list" : {
+					"type" : "list",
+					"callback" : "null",
+					"zlevel" : 19,
+					"columns" : 4,
+					"schema" : {
+						"spacing" : [2, 2],
+						"memberSize" : [69, 69],
+						"unselectedBG" : "/rexemotesbinder/image/elementbg.png",
+						"selectedBG" : "/rexemotesbinder/image/elementbg.png?brightness=60",
+						"listTemplate" : {
+							"background" : {
+								"zlevel" : 25,
+								"type" : "image",
+								"file" : "/rexemotesbinder/image/elementbg.png",
+								"position" : [0,0]
+							},
+							"preview" : {
+								"zlevel" : 25,
+								"type" : "image",
+								"centered" : true,
+								"file" : "",
+								"minSize" : [60,60],
+								"maxSize" : [60,60],
+								"position" : [35,35]
+							},
+							"text" : {
+								"zlevel" : 26,
+								"type" : "label",
+								"position" : [4, 6],
+								"vAnchor" : "mid",
+								"hAnchor" : "left",
+								"value" : "test"
+							}
+						}
+					}
+				}
+			}
+		},
+		
+		"itemid" : {
+			"zlevel" : 2,
+			"type" : "textbox",
+			"position" : [4, 221],
+			"maxWidth" : 290,
+			"hAnchor" : "left",
+			"vAnchor" : "bottom",
+			"callback" : "callback",
+			"enterKey" : "itemidenter"
+		}
+
+	},
+
+	"canvasClickCallbacks" : {},
+	
+	"canvasKeyCallbacks" : {},
+	
+	"scriptWidgetCallbacks" : [
+		"callback",
+		"itemidenter"
+	],
+		
+	"directory" : "/rexemotesbinder/",
+	"scripts" : ["/mpguns_core/main.lua"],
+	"system" : "/rexemotesbinder/ui.lua",
+	"scriptDelta" : 1
+}

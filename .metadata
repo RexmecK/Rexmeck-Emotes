@@ -1,0 +1,13 @@
+{
+  "author" : "Rexmeck",
+  "description" : "[h1]Important note[/h1]\nCustom races are not fully compatible\nThis hooks onto playerprimary scripts in order to get the mod working\n>> Vanilla compatible <<",
+  "friendlyName" : "Rexmeck Emotes",
+  "includes" : [],
+  "link" : "steam://url/CommunityFilePage/2209533116",
+  "name" : "rexemotes",
+  "priority" : 9999,
+  "requires" : [],
+  "steamContentId" : "2209533116",
+  "tags" : "Miscellaneous|Character Improvements",
+  "version" : "Alpha 1"
+}

@@ -1,0 +1,7 @@
+[
+	{
+		"op": "add",
+		"path": "/genericScriptContexts/rexemotes",
+		"value": "/rexemotes_core/hooks/player.lua"
+	}
+]

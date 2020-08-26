@@ -1,0 +1,34 @@
+[
+	{
+		"lights": {},
+		"burstParticle": [],
+		"animationState": {},
+		"fireEvents": [],
+		"wait": 0.1,
+		"playSounds": [],
+		"transforms": {}
+	},
+	{
+		"lights": {},
+		"burstParticle": [],
+		"animationState": {},
+		"fireEvents": [],
+		"wait": 0.1,
+		"playSounds": [],
+		"transforms": {
+			"h_1_FrontArm": {
+				"rotation": -31.75
+			},
+			"h_1_BackArm": {
+				"rotation": 24.8125
+			},
+			"h_1_FrontHand": {},
+			"h_1_BackForeArm": {
+				"rotation": -168.25
+			},
+			"h_1_FrontForeArm": {
+				"rotation": 48.1875
+			}
+		}
+	}
+]

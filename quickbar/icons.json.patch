@@ -1,0 +1,7 @@
+[
+	{
+		"op": "add",
+    	"path": "/normal/-",
+    	"value": { "label" : "Rexmeck Emotes", "pane" : "/rexemotesbinder/main.window", "icon" : "/rexemotesbinder/image/smallicon.png" }
+    }
+]
