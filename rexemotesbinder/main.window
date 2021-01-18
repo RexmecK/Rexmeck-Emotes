@@ -230,7 +230,7 @@
 	],
 		
 	"directory" : "/rexemotesbinder/",
-	"scripts" : ["/mpguns_core/main.lua"],
+	"scripts" : ["/rexemotesbinder/main.lua"],
 	"system" : "/rexemotesbinder/ui.lua",
 	"scriptDelta" : 1
 }

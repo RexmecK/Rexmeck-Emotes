@@ -25,8 +25,6 @@ function init()
 	include "config" --needed to load certain configs
 	include "directory" 
 
-	if checkUpdates() then return end
-
 	init = function()
 		if main and main.init then
 			main:init()
