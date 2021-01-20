@@ -9,5 +9,7 @@
 	"facepalm" : {"image":"/rexemotes/facepalm/icon.png"},
 	"brofist" : {"image":"/rexemotes/brofist/icon.png"},
 	"tpose" : {"image":"/rexemotes/tpose/icon.png"},
-	"sit" : {"image":"/rexemotes/sit/icon.png"}
+	"sit" : {"image":"/rexemotes/sit/icon.png"},
+	"backflip" : {"image":"/rexemotes/backflip/icon.png"},
+	"hug" : {"image":"/rexemotes/hug/icon.png"}
 }
