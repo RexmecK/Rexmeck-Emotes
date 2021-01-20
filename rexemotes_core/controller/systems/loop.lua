@@ -7,7 +7,7 @@ include "animations"
 include "actorManager"
 
 main = {}
-main.played = false
+main.played = {}
 main.destroyTick = -1
 
 function main:init()
@@ -65,26 +65,26 @@ function main:update(dt)
 
 	local full = actorManager:fullLounged()
 
-	if full and not self.played then
+	if full and not self.played["play"] then
 		if animations:isPlaying("idle") then
 			animations:stop("idle")
 		end
 		if animations:isPlaying("idleLoop") then
 			animations:stop("idleLoop")
 		end
-		self.played = true
+		self.played["play"] = true
 		animations:play("play")
-	elseif not full and not self.played and not self.playedIdle and not animations:isAnyPlaying() then
-		self.playedIdle = true
+	elseif not full and not self.played["play"] and not self.played["idle"] and animations:has("idle") and not animations:isAnyPlaying() then
+		self.played["idle"] = true
 		animations:play("idle")
-	elseif not full and not self.played and self.playedIdle and not animations:isAnyPlaying() then
-		self.playedIdle = true
+	elseif not full and not self.played["play"] and self.played["idleLoop"] and animations:has("idleLoop") and not animations:isAnyPlaying() then
+		self.played["idleLoop"] = true
 		animations:play("idleLoop")
-	elseif ((self.played and not full) or empty) and not self.kicked then
+	elseif ((self.played["play"] and not full) or empty) and not self.kicked then
 		self.kicked = true
 		actorManager:toggleLounges(false)
 		self.destroyTick = 10
-	elseif self.played and not animations:isAnyPlaying() then
+	elseif self.played["play"] and not animations:isAnyPlaying() then
 		animations:play("loop")
 	end
 

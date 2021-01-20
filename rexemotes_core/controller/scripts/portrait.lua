@@ -240,10 +240,40 @@ portrait.species = {
 }
 --
 
+local function detectSpecies(id)
+	local p = world.entityPortrait(id, "full")
+	local speciesPaths = {} 
+	for i,v in pairs(p) do
+		if p.image then
+			local find = string.gmatch(p.image, "/humanoid/.+/")()
+			local str
+			if find then 
+			   str = p.image:sub(("/humanoid/"):len() + 1, find:len() - 1) 
+			end
+			if str then
+				speciesPaths[str] = (speciesPaths[str] or 0) + 1
+			end
+		end
+	end
+
+	local highest = {nil, 0}
+	for i,v in pairs(speciesPaths) do
+		if highest[2] > v then
+			highest = {i, v}
+		end
+	end
+	
+	if not highest[1] then
+		return world.entitySpecies(id)
+	end
+
+	return highest[1]
+end
+
 function portrait:new(id)
 	if world.entityExists(id) then
 		local n = tablecopy(self)
-		n.specie = world.entitySpecies(id)
+		n.specie = detectSpecies(id)
 		n.portrait = world.entityPortrait(id, "full")
 		n.gender = world.entityGender(id)
 

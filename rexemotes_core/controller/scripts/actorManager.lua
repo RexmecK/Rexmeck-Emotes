@@ -8,6 +8,7 @@ actorManager = {}
 actorManager.actors = {}
 actorManager.seats = {}
 actorManager.ready = false
+actorManager.interactableSeats = false
 
 local function speciesFullbright(specie)
 	if not specie then return false end
@@ -23,6 +24,7 @@ function actorManager:init()
 	for i,v in pairs(self.loungePositions) do
 		self.seats[i] = 0
 	end
+	vehicle.setInteractive(true)
 	self:setupEmotesAnimationEvent()
 	self:update(1/16)
 end
@@ -74,6 +76,9 @@ function actorManager:setupEmotesAnimationEvent()
 end
 
 function onInteraction(args)
+	if not actorManager.interactableSeats then
+		return {"None", 0} 
+	end
 	local index = 0
 	for SeatId,v in pairs(actorManager.loungePositions) do
 		if not vehicle.entityLoungingIn(SeatId) then
@@ -139,7 +144,9 @@ function actorManager:update(dt)
 	end
 
 	self.ready = ready
-	vehicle.setInteractive(interactable)
+	if self.interactableSeats ~= interactable then
+		self.interactableSeats = interactable
+	end
 end
 
 function actorManager:uninit()
